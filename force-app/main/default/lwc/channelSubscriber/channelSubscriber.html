@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : Surinderjit Singh Bajwa
+  @group             : 
+  @last modified on  : 02-05-2024
+  @last modified by  : Surinderjit Singh Bajwa
+-->
+<template>
+    <lightning-card title="Channel Update" icon-name="standard:contact">
+        <div>
+            Last Message Received Time:
+            <lightning-formatted-date-time value={getlastMessageReceived} year="numeric" month="numeric" day="numeric"
+                hour="2-digit" minute="2-digit" time-zone="UTC" time-zone-name="short"
+                hour12={ampm}></lightning-formatted-date-time>
+        </div>
+    </lightning-card>
+</template>
