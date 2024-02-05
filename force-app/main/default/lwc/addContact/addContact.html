@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : Surinderjit Singh Bajwa
+  @group             : 
+  @last modified on  : 02-05-2024
+  @last modified by  : Surinderjit Singh Bajwa
+-->
+<template>
+  <lightning-card title="Add Contact" icon-name="standard:contact">
+    <div>
+      <lightning-record-form columns="2" mode="add" fields={fields} object-api-name={objectApiName}
+        onsubmit={handleSubmit} onsuccess={handleSuccess} oncancel={handleCancel} onerror={handleError}>
+      </lightning-record-form>
+    </div>
+    <div slot="footer">Save new contact and dispatch RefreshView API
+    </div>
+  </lightning-card>
+</template>
