@@ -224,6 +224,12 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>channelSubscriber</componentName>
+                <identifier>c_channelSubscriber</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>addContact</componentName>
                 <identifier>c_addContact</identifier>
             </componentInstance>
