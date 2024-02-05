@@ -1,0 +1,22 @@
+<!--
+  @description       : 
+  @author            : Surinderjit Singh Bajwa
+  @group             : 
+  @last modified on  : 02-05-2024
+  @last modified by  : Surinderjit Singh Bajwa
+-->
+<template>
+    <lightning-card title="List Contact" icon-name="standard:contact">
+        <div>
+            Last Refresh Time:
+            <lightning-formatted-date-time value={getlastRefreshTime} year="numeric" month="numeric" day="numeric"
+                hour="2-digit" minute="2-digit" time-zone="UTC" time-zone-name="short"
+                hour12={ampm}></lightning-formatted-date-time>
+        </div>
+        <div>
+            <lightning-datatable key-field="Id" data={contactList} columns={columnDefinition}></lightning-datatable>
+        </div>
+        <div slot="footer">Show contact list
+        </div>
+    </lightning-card>
+</template>
